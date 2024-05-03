@@ -8,17 +8,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.UuidGenerator;
 
-class Address {
-    String city;
-    String country;
-    public Address(String city, String country){
-        this.city = city;
-        this.country = country;
-    }
-}
-enum Status{
-    ACTIVE,INACTIVE
-}
 @Entity
 @Table(name="contacts")
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
